@@ -1,0 +1,249 @@
+body, html, .ox {
+  padding: 0;
+  margin: 0;
+}
+
+/* 清除浮动 */
+.clear {
+  clear: both;
+}
+
+.owo-animation {
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+/* 清除浮动 */
+.clear:after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.title-bar[template=topBar] {
+  height: 40px;
+  background-color: #ffffff;
+}
+
+[template=topBar] .title-bar-content {
+  width: 1000px;
+  height: 40px;
+  margin: auto;
+}
+
+[template=topBar] img {
+  margin: 5px 10px;
+  height: 30px;
+}
+
+[template=topBar] a {
+  float: left;
+  display: block;
+}
+
+[template=topBar] .link {
+  color: rgba(102, 102, 102, 1.00);
+  font-size: 14px;
+  margin: 0 10px;
+  line-height: 40px;
+}
+
+[template=topBar] a {
+  color: #333;
+  text-decoration: none;
+}
+.title-bar[template=titleBar] {
+  height: 115px;
+  overflow: hidden;
+  background-color: #d62c2b;
+}
+
+[template=titleBar] ul {
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+[template=titleBar] li {
+  display: inline-block;
+  height: 115px;
+  line-height: 115px;
+  font-size: 32px;
+  color: white;
+  margin: 0 8px;
+}
+
+[template=titleBar] li a {
+  display: inline;
+}
+
+[template=titleBar] p {
+  width: 272px;
+  overflow: hidden;
+  height: 50px;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 25px;
+  margin-bottom: -15px;
+  margin-left: -20px;
+}
+
+[template=titleBar] p a {
+  font-size: 18px;
+}
+.swiper-box[template=swiperBox] {
+  height: 410px;
+  overflow: hidden;
+  width: 650px;
+  margin: 0 auto;
+}
+
+.swiper-box[template=swiperBox] img {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-box[template=swiperBox] .swiper-wrapper .text {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  line-height: 30px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.swiper-box[template=swiperBox] .right {
+  width: 100%;
+  height: 410px;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.swiper-box[template=swiperBox] .o-home .swiper-wrapper .text {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  line-height: 30px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.swiper-box[template=swiperBox] .pagination {
+  position: absolute;
+  bottom: 5px;
+  height: 20px;
+  right: 5px;
+}
+
+[template=swiperBox] .swiper-pagination-switch {
+  width: 6px;
+  height: 6px;
+  margin: 0 3px;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  border: 1px solid white;
+}
+
+[template=swiperBox] .swiper-active-switch {
+  background-color: white;
+}
+
+[template=swiperBox] a {
+  text-decoration: none;
+}
+
+[template=swiperBox] .swiper-slide {
+  position: relative;
+}
+
+[template=swiperBox] .pagination-pPX8XxuUyIehAAEu {
+  position: absolute;
+  bottom: 35px;
+  right: 10px;
+}
+[template=newsList] h2 {
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+  overflow: hidden;
+  height: auto;
+  font-family: 'Microsoft YaHei';
+  line-height: 30px;
+  margin-bottom: 5px;
+}
+
+[template=newsList] li {
+  font-size: 14px;
+  line-height: 38px;
+}
+[template=home] .w1000 {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+[template=home] .content {
+  background-color: #f8f8f8;
+}
+
+[template=home] .title {
+  line-height: 40px;
+  font-size: 36px;
+  margin: 20px 0;
+  font-family: "Microsoft YaHei";
+}
+
+[template=home] .swiper-box {
+  float: left;
+}
+
+[template=home] .swiper-box[template=swiperBox] .swiper-wrapper .text {
+  height: 70px;
+  line-height: 45px;
+  text-align: center;
+  font-size: 14px;
+  margin: 0;
+  padding: 10px 0;
+}
+
+[template=home] [template=swiperBox] .pagination-pPX8XxuUyIehAAEu {
+  position: absolute;
+  bottom: 15px;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+
+[template=home] .swiper-news-box .right {
+  float: left;
+}
+
+[template=home] .news-list[template=newsList] {
+  width: 330px;
+  margin-left: 20px;
+}

@@ -1,0 +1,62 @@
+<template lang="pug">
+.home
+  temple(name="topBar", src="http://154.8.196.163:8004/public/678b6998081f133324ca4718ab5b633b.page")
+  temple(name="titleBar", src="./src/module/titleBar.owo")
+  .content.w1000
+    //- 主标题
+    h1.title 坚持与真理同行与时代同步 把广大知识在分子紧紧团结
+    .swiper-news-box
+      temple(name="swiperBox", src="http://154.8.196.163:8004/public/2067ed7b3bba3e4e314efe6e0d451420.page")
+      .right
+        temple(name="newsList", src="./src/module/newsList.owo")
+        temple(name="newsList", src="./src/module/newsList.owo")
+      .clear
+</template>
+
+
+<style lang="less">
+.w1000 {
+  width: 1000px;
+  margin: 0 auto;
+}
+.content {
+  background-color: #f8f8f8;
+}
+.title {
+  line-height: 40px;
+  font-size: 36px;
+  margin: 20px 0;
+  font-family: "Microsoft YaHei";
+}
+.swiper-box {
+  float: left;
+}
+
+
+// 轮播图样式
+.swiper-box[template=swiperBox] .swiper-wrapper .text {
+  height: 70px;
+  line-height: 45px;
+  text-align: center;
+  font-size: 14px;
+  margin: 0;
+  padding: 10px 0;
+}
+
+[template=swiperBox] .pagination-pPX8XxuUyIehAAEu {
+  position: absolute;
+  bottom: 15px;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+
+.swiper-news-box .right {
+  float: left;
+}
+
+.news-list[template=newsList] {
+  width: 330px;
+  margin-left: 20px;
+}
+</style>

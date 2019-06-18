@@ -1,0 +1,12 @@
+<template>
+<div class="image-news-list">
+  <img src="@&70.png&"/>
+</div>
+</template>
+
+
+<style lang="less">
+.image-news-list {
+
+}
+</style>
