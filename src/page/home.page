@@ -11,6 +11,31 @@
         temple(name="newsList", src="./src/module/newsList.owo")
         temple(name="newsList", src="./src/module/newsList.owo")
       .clear
+  .image-news-box
+    .w1000
+      temple(name="imageNewsList", src="./src/module/imageNewsList.owo")
+      temple(name="imageNewsList", src="./src/module/imageNewsList.owo")
+      temple(name="imageNewsList", src="./src/module/imageNewsList.owo")
+      .clear
+  .content.w1000
+    .title-bar
+    .people-box.clear
+      temple(name="people", src="./src/module/people.owo")
+      temple(name="people", src="./src/module/people.owo")
+      temple(name="people", src="./src/module/people.owo")
+      temple(name="people", src="./src/module/people.owo")
+      temple(name="people", src="./src/module/people.owo")
+      temple(name="people", src="./src/module/people.owo")
+      temple(name="people", src="./src/module/people.owo")
+      temple(name="people", src="./src/module/people.owo")
+    .news-card-box.clear
+      temple(name="newsCard", src="./src/module/newsCard.owo")
+      temple(name="newsCard", src="./src/module/newsCard.owo")
+      temple(name="newsCard", src="./src/module/newsCard.owo")
+      temple(name="newsCard", src="./src/module/newsCard.owo")
+      temple(name="newsCard", src="./src/module/newsCard.owo")
+      a(href="http://www.people.com.cn/", target="_blank")
+        img(src="@&img.jpg&", width="480", height="280")
 </template>
 
 
@@ -19,9 +44,11 @@
   width: 1000px;
   margin: 0 auto;
 }
+
 .content {
-  background-color: #f8f8f8;
+  margin-bottom: 30px;
 }
+
 .title {
   line-height: 40px;
   font-size: 36px;
@@ -58,5 +85,13 @@
 .news-list[template=newsList] {
   width: 330px;
   margin-left: 20px;
+}
+
+.title-bar {
+  background-image: url('@&title.png&');
+  height: 50px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
 }
 </style>

@@ -1,4 +1,4 @@
-// Tue Jun 18 2019 17:00:52 GMT+0800 (GMT+08:00)
+// Wed Jun 19 2019 11:19:42 GMT+0800 (GMT+08:00)
 
 "use strict";
 
@@ -35,7 +35,10 @@ window.owo = {
     },
     "topBar": {},
     "titleBar": {},
-    "newsList": {}
+    "newsList": {},
+    "imageNewsList": {},
+    "people": {},
+    "newsCard": {}
   },
   // 页面默认入口
   entry: "home"

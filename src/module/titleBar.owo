@@ -1,5 +1,5 @@
 <template>
-<div class="title-bar">
+<nav>
   <ul>
     <li>
       <a href="http://www.people.com.cn/" target="_blank">要闻联播</a>
@@ -23,12 +23,12 @@
       <a href="http://www.people.com.cn/" target="_blank">中国统一战线新闻网</a>
     </li>
   </ul>
-</div>
+</nav>
 </template>
 
 
 <style lang="less">
-.title-bar {
+nav {
   height: 115px;
   overflow: hidden;
   background-color: #d62c2b;

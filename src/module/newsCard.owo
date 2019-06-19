@@ -1,6 +1,5 @@
 <template>
-<div class="image-news-list">
-  <img width="165" height="54" src="@&70.png&"/>
+<div class="news-card">
   <ul>
     <li><a href="" target="_blank">垄断设施、监视全球,网络空间成美国私有领地</a></li>
     <li><a href="" target="_blank">安委会巡查山东:有部门把安全生产当烫手山芋</a></li>
@@ -13,21 +12,31 @@
 
 
 <style lang="less">
-.image-news-list {
-  padding: 0 15px;
-  margin: 15px 0;
-  width: 290px;
+.news-card {
+  width: 480px;
+  height: 280px;
+  border: 1px solid #efefef;
+  box-sizing: border-box;
+  padding: 15px 10px;
+  background-repeat: no-repeat;
+  background-position: 15px 15px;
+  background-image: url('@&title1.png&');
+  padding-top: 75px;
+}
+ul {
+  height: 190px;
+  overflow: hidden;
 }
 li {
   font-size: 14px;
   line-height: 38px;
-  padding-left: 20px;
   height: 38px;
   overflow: hidden;
+  padding-left: 25px;
   position: relative;
 }
 li:before {
-  content: '•';
+  content: url('@&list-icon.png&');
   color: #595757;
   width: 25px;
   display: inline-block;
@@ -36,6 +45,6 @@ li:before {
   position: absolute;
   line-height: 36px;
   left: 0;
-  top: 2px;
+  top: 3px;
 }
 </style>

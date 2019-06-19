@@ -10,7 +10,7 @@ body, html {
   min-height: 100%;
 }
 body {
-  background-color: #f8f8f8;
+  background-color: white;
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center top;
@@ -52,6 +52,52 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
   clear: both;
 }
 
-.title-bar[template=titleBar] {
+nav[template=titleBar] {
   margin-top: 34%;
+}
+
+[template=home] .swiper-news-box .right {
+  height: 410px;
+  overflow: hidden;
+}
+
+.image-news-list[template=imageNewsList] {
+  float: left;
+  width: 302px;
+  border-right: 1px solid #ebebeb;
+}
+
+/* 最后一个没有右边框 */
+.image-news-list[template=imageNewsList]:nth-last-child(2) {
+  border-right: none;
+}
+
+.image-news-box {
+  background-color: #f8f8f8;
+  margin-bottom: 30px;
+}
+
+.news-card-box {
+  margin-right: -35px;
+}
+.news-card[template=newsCard] {
+  float: left;
+  margin-right: 35px;
+  margin-bottom: 50px;
+}
+
+.news-card:nth-child(2) {
+  background-image: url('@&title2.png&');
+}
+
+.news-card:nth-child(3) {
+  background-image: url('@&title3.png&');
+}
+
+.news-card:nth-child(4) {
+  background-image: url('@&title4.png&');
+}
+
+.news-card:nth-child(5) {
+  background-image: url('@&title5.png&');
 }
