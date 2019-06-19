@@ -1,6 +1,6 @@
 <template>
 <div class="news-list">
-  <h2>聚焦：深入领会初心和使命的深刻内涵</h2>
+  <h2><a href="http://politics.people.com.cn/n1/2019/0618/c1001-31164466.html" target="_blank">聚焦：深入领会初心和使命的深刻内涵</a></h2>
   <ul>
     <li>
       <a href="http://politics.people.com.cn/n1/2019/0618/c1001-31164466.html" target="_blank">电商知识产权峰会侧记:让网购更放心顺心舒心</a>

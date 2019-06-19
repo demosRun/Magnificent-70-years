@@ -1,0 +1,75 @@
+<template>
+<div class="image-card">
+  <div class="left">
+    <img width="160" height="110" src="@&img.jpg&"/>
+    <p><a href="" target="_blank">北京取消医用耗材加成是务实多赢之举</a></p>
+  </div>
+  <div class="right">
+    <h2><a href="" target="_blank">中共中央国务院关于加强食品安全工作</a></h2>
+    <p>家住西安的陈金钟已年届80岁，他2015年进入健身房，接受专业人员的指导，成为了一名。</p>
+    <ul>
+      <li><a href="" target="_blank">垄断设施、监视全球,网络空间成美国私有领地</a></li>
+      <li><a href="" target="_blank">安委会巡查山东:有部门把安全生产当烫手山芋</a></li>
+      <li><a href="" target="_blank">人民日报批不合理收费:有影院强制出售3D眼镜</a></li>
+    </ul>
+  </div>
+  <div class="clear"></div>
+</div>
+</template>
+
+
+<style lang="less">
+.image-card {
+  width: 470px;
+}
+.left {
+  width: 180px;
+  float: left;
+  margin-top: 13px;
+  img {
+    margin: 0 auto;
+    display: block;
+  }
+  p {
+    font-size: 14px;
+    text-align: center;
+    line-height: 21px;
+    margin: 5px 0;
+  }
+}
+.right {
+  float: left;
+  width: 280px;
+  h2 {
+    font-size: 14px;
+    line-height: 38px;
+    padding-left: 25px;
+  }
+  p {
+    font-size: 12px;
+    line-height: 20px;
+    padding-left: 25px;
+  }
+  li {
+    font-size: 14px;
+    line-height: 38px;
+    height: 38px;
+    overflow: hidden;
+    padding-left: 25px;
+    position: relative;
+  }
+  li:before {
+    content: url('@&list-icon.png&');
+    color: #595757;
+    width: 25px;
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    position: absolute;
+    line-height: 36px;
+    left: 0;
+    top: 3px;
+  }
+}
+
+</style>

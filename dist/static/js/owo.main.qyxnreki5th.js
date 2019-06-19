@@ -1,4 +1,4 @@
-// Wed Jun 19 2019 11:19:42 GMT+0800 (GMT+08:00)
+// Wed Jun 19 2019 14:19:19 GMT+0800 (GMT+08:00)
 
 "use strict";
 
@@ -9,6 +9,7 @@ window.owo = {
       "template": {
         "swiperBox": {
           "data": {
+            "swiper": null,
             "swiperBoxList": [{
               "src": "https://cunchu.site/ozzx/resource/img1.jpg",
               "text": "全省“法治进校园”巡讲团首站——晋中"
@@ -21,13 +22,23 @@ window.owo = {
             }]
           },
           "created": function created() {
+            var _this = this;
+
             // 轮播图展示区域swiper
             setTimeout(function () {
-              new Swiper('.swiper-container-pPX8XxuUyIehAAEu', {
+              _this.data.swiper = new Swiper('.swiper-container-pPX8XxuUyIehAAEu', {
+                autoplay: 3000,
+                loop: true,
                 pagination: '.pagination-pPX8XxuUyIehAAEu',
                 paginationClickable: true
               });
             }, 0);
+          },
+          "swiperNext": function swiperNext() {
+            this.data.swiper.swipeNext();
+          },
+          "swiperPrev": function swiperPrev() {
+            this.data.swiper.swipePrev();
           },
           "prop": {}
         }
@@ -38,7 +49,9 @@ window.owo = {
     "newsList": {},
     "imageNewsList": {},
     "people": {},
-    "newsCard": {}
+    "newsCard": {},
+    "imageCard": {},
+    "copyright": {}
   },
   // 页面默认入口
   entry: "home"

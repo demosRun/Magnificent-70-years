@@ -6,6 +6,8 @@
         img(src="{{item.src}}")
         .text {{item.text}}
     .pagination-pPX8XxuUyIehAAEu
+    .last.button(@click="swiperPrev")
+    .next.button(@click="swiperNext")
   .clear
     
 </template>
@@ -13,6 +15,7 @@
 <script>
   module.exports = {
     data: {
+      swiper: null,
       swiperBoxList: [
         {src:"https://cunchu.site/ozzx/resource/img1.jpg", text: "全省“法治进校园”巡讲团首站——晋中"},
         {src:"https://cunchu.site/ozzx/resource/img1.jpg", text: "全省“法治进校园”巡讲团首站——晋中"},
@@ -22,11 +25,19 @@
     created: function () {
       // 轮播图展示区域swiper
       setTimeout(() => {
-        new Swiper('.swiper-container-pPX8XxuUyIehAAEu', {
+        this.data.swiper = new Swiper('.swiper-container-pPX8XxuUyIehAAEu', {
+          autoplay: 3000,
+          loop: true,
           pagination: '.pagination-pPX8XxuUyIehAAEu',
           paginationClickable: true
         })
       }, 0)
+    },
+    swiperNext: function () {
+      this.data.swiper.swipeNext()
+    },
+    swiperPrev: function () {
+      this.data.swiper.swipePrev()
     }
   }
 </script>
@@ -101,5 +112,20 @@ a {
   position: absolute;
   bottom: 35px;
   right: 10px;
+}
+.button {
+  position: absolute;
+  width: 36px;
+  height: 77px;
+  top: 130px;
+  cursor: pointer;
+}
+.last {
+  left: 0;
+  background-image: url('@&left.png&');
+}
+.next {
+  right: 0;
+  background-image: url('@&right.png&');
 }
 </style>

@@ -28,14 +28,23 @@
       temple(name="people", src="./src/module/people.owo")
       temple(name="people", src="./src/module/people.owo")
       temple(name="people", src="./src/module/people.owo")
-    .news-card-box.clear
+    .news-card-box
       temple(name="newsCard", src="./src/module/newsCard.owo")
       temple(name="newsCard", src="./src/module/newsCard.owo")
       temple(name="newsCard", src="./src/module/newsCard.owo")
       temple(name="newsCard", src="./src/module/newsCard.owo")
       temple(name="newsCard", src="./src/module/newsCard.owo")
-      a(href="http://www.people.com.cn/", target="_blank")
-        img(src="@&img.jpg&", width="480", height="280")
+      .card-item
+        a(href="http://www.people.com.cn/", target="_blank")
+          img(src="@&img.jpg&", width="480", height="280")
+      .clear
+      .long-card
+        .long-card-title
+          a(href="" target="_blank")
+        temple(name="imageCard", src="./src/module/imageCard.owo")
+        temple(name="imageCard", src="./src/module/imageCard.owo")
+        .clear
+  temple(name="copyright", src="http://154.8.196.163:8004/public/ae9b992ba8eea6a6996d4e59ff409199.page")  
 </template>
 
 
@@ -93,5 +102,38 @@
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 30px;
+}
+
+.long-card {
+  height: 280px;
+  width: 1000px;
+  padding: 0 25px;
+  overflow: hidden;
+  border: 1px solid #efefef;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+.card-item {
+  width: 480px;
+  height: 280px;
+  float: left;
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.long-card-title {
+  height: 54px;
+  margin-top: 15px;
+  background-repeat: no-repeat;
+  background-image: url('@&title1.png&');
+  a {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
 }
 </style>

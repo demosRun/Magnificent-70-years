@@ -1,6 +1,6 @@
 <template>
-  <div class="title-bar">
-    <div class="title-bar-content">
+  <div class="top-title-bar">
+    <div class="top-title-bar-content">
       <a target="_blank" href="http://www.people.com.cn/">
         <img alt="人民网" title="人民网" src="http://www.people.com.cn/img/2016people/images/rmw_logo.png"/>
       </a>
@@ -9,11 +9,11 @@
 </template>
 
 <style>
-.title-bar {
+.top-title-bar {
   height: 40px;
   background-color: #ffffff;
 }
-.title-bar-content {
+.top-title-bar-content {
   width: 1000px;
   height: 40px;
   margin: auto;

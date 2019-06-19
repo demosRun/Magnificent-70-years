@@ -17,7 +17,7 @@ module.exports = {
     },
     {
       name: 'viewport',
-      content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi',
+      content: 'width=device-width, initial-scale=0, maximum-scale=1, user-scalable=yes,shrink-to-fit=no',
     },
     {
       name: 'format-detection',
@@ -162,13 +162,13 @@ module.exports = {
     // 输出配置
     outPut: {
       // 是否压缩css
-      minifyCss: true,
+      minifyCss: false,
       // 是否压缩js
-      minifyJs: true,
+      minifyJs: false,
       // 输出文件自动追加版本号，可以用来消除缓存
       addVersion: true,
       // 小于多大的资源会嵌入到代码中,单位kb,默认10,设置为0则不启用
-      embedSize: 10,
+      embedSize: 2,
       // 将重要样式和js合并到html中以优化页面打开速度
       merge: false
     }
