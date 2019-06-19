@@ -14,6 +14,7 @@ body {
   background-size: 100%;
   background-position: center top;
   min-width: 1200px;
+  background-position-y: 40px;
   background-image: url('../resource/bg-2.jpg');
 }
 h1, h2, h3, h4, h5, input {
@@ -51,10 +52,43 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
   padding-top: 19%;
 }
 
+
+.top-title-bar[template=topBar] {
+  height: 40px;
+  background-color: #ffffff;
+}
+
+[template=topBar] .top-title-bar-content {
+  width: 1000px;
+  height: 40px;
+  margin: auto;
+}
+
+[template=topBar] img {
+  margin: 5px 10px;
+  height: 30px;
+}
+
+[template=topBar] a {
+  float: left;
+  display: block;
+}
+
+[template=topBar] .link {
+  color: rgba(102, 102, 102, 1.00);
+  font-size: 14px;
+  margin: 0 10px;
+  line-height: 40px;
+}
+
+[template=topBar] a {
+  color: #333;
+  text-decoration: none;
+}
+
 .lujing{ padding:15px 0;}
 .lujing a{ padding:0 5px;display: inline;}
 .lujing,.lujing a:link,.lujing a:visited,.lujing a:hover{ color:#666;}
-a
 
 h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,button,input,textarea,th,td{margin:0;padding:0;}
 div{margin:0 auto;text-align:left;font:normal 12px/180% \5FAE\8F6F\96C5\9ED1;}
